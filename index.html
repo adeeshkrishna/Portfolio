@@ -1,19 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">
-        <img src="assets/ak logo1.png" alt="Adeesh Krishna Logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">
+      <img src="assets/ak logo1.png" alt="Adeesh Krishna Logo" />
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work_experience">Work Experience</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <img src="assets/ak logo1.png" alt="Adeesh Krishna Logo" />
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#work_experience" onclick="toggleMenu()">Work Experience</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="assets/AK PP.png" alt="Adeesh Krishna profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">ADEESH KRISHNA</h1>
+      <p class="section__text__p2">Data Scientist</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('assets/CV-AK-DA-2025.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/adeeshkrishna/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/adeeshkrishna'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="assets/AK PP2.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Certification</h3>
+            <p>6 Months <br />NACTET - Data Science</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Physics<br />M.Sc. Physics</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I’m Adeesh, a Data Scientist and Machine Learning Engineer with a strong focus on predictive modeling,
+            data analysis, and AI-driven solutions. With experience in Python, SQL, OpenCV, and Power BI,
+            I’ve developed and deployed machine learning models across a variety of industries.
+            My work spans from analyzing marketing campaigns to building intelligent ad systems using computer vision.
+
+            I am passionate about leveraging data to drive innovation and deliver impactful results,
+            constantly learning and exploring new advancements in AI and machine learning.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#work_experience'" />
+  </section>
+
+  <section id="work_experience">
+    <p class="section__text__p1">Discover My</p>
+    <h1 class="title">Work Experience</h1>
+    <div class="work-experience-container">
+      <div class="work-card">
+        <h2 class="work-title">Data Analyst</h2>
+        <h4 class="work-company">Accurate Legal Billing</h4>
+        <p class="work-duration">Dec 2024 - Present</p>
+        <ul class="work-description">
+          <li>Leveraged BERT for UTBMS code classification, automating the process and achieving 90% accuracy and
+            reduced processing time by 50% through optimized data workflows using Python.</li>
+          <li>Built interactive Power BI dashboards to monitor KPIs and support data-driven decisions.</li>
+          <li>Collaborated with cross-functional teams to enhance product features through data insights.</li>
+        </ul>
+      </div>
+      <div class="work-card">
+        <h2 class="work-title">Data Science Intern</h2>
+        <h4 class="work-company">Luminar Technohub</h4>
+        <p class="work-duration">Oct 2024 - Nov 2024</p>
+        <ul class="work-description">
+          <li>Processed and cleaned datasets of 500,000+ entries using Python and created predictive models using
+            Scikit-Learn that increased model accuracy by 15%.</li>
+          <li>Implemented 5+ machine learning and deep learning models for computer vision tasks.</li>
+          <li>Developed 3+ interactive Power BI dashboards using DAX to visualize key business metrics.</li>
+        </ul>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+  
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages / Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Pycharm</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3> V S Code</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PowerBI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git & GitHub</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Postman</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Streamlit</h3>
+                <p>Basic</p>
+              </div>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Libraries / Frameworks:</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Numpy</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Pandas</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Keras</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Tensorflow</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Scikit-learn</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Scikit-image</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>OpenCV</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MediaPipe</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>YOLO</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>NLP</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="project-grid">
+
+      <!-- IntelliPDF Project -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/IntelliPDF.png" alt="IntelliPDF Project" class="project-img">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">AI-Powered PDF Query Web App – IntelliPDF</h2>
+          <p class="project-description">
+            AI-powered web app that lets users query PDFs in natural language using OpenAI and RAG with LangChain and ChromaDB.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">LangChain </span>
+            <span class="tech-tag">Flask </span>
+            <span class="tech-tag">ChromaDB</span>
+            <span class="tech-tag">OpenAI API</span>
+          </div>
+          <div class="project-links">
+            <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/intelli_pdf'">
+              <i class="fab fa-github"></i> Github
+            </button>
+            <button class="project-btn"
+              onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_ai-openai-langchain-activity-7317120559106904064-Ot5j?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgQ_5UBUDGzxg7uV9kGKSpF_YP32xR1p64'">
+              <i class="fas fa-globe"></i> Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SmartAd Project -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/SMARTAD.png" alt="SmartAd Project" class="project-img">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">SmartAd</h2>
+          <p class="project-description">
+            An intelligent advertising system using computer vision to analyze viewer engagement and demographic data in
+            real-time.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+          </div>
+          <div class="project-links">
+            <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/OpenCV_project'">
+              <i class="fab fa-github"></i> Github
+            </button>
+            <button class="project-btn"
+              onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_machinelearning-computervision-artificialintelligence-activity-7234448555048906753-Nou7'">
+              <i class="fas fa-play"></i> Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Autism Detection Project -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/AUTISM.png" alt="Autism Detection Project" class="project-img">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Autism Detection from Facial Image</h2>
+          <p class="project-description">
+            Deep learning model to detect autism spectrum disorder using facial image analysis, deployed as a web
+            application.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Deep Learning</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Computer Vision</span>
+          </div>
+          <div class="project-links">
+            <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/DL_project'">
+              <i class="fab fa-github"></i> Github
+            </button>
+            <button class="project-btn"
+              onclick="location.href='https://autism-detection-from-facial-image.streamlit.app/'">
+              <i class="fas fa-globe"></i> Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bank Marketing Project -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/BANK.png" alt="Bank Marketing Project" class="project-img">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Bank Marketing Campaign Predictor</h2>
+          <p class="project-description">
+            Machine learning model to predict the success of bank marketing campaigns, with an interactive web
+            interface.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Data Analysis</span>
+          </div>
+          <div class="project-links">
+            <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/ML_project'">
+              <i class="fab fa-github"></i> Github
+            </button>
+            <button class="project-btn"
+              onclick="location.href='https://bank-marketing-campaign-success-prediction.streamlit.app/'">
+              <i class="fas fa-globe"></i> Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movie recommendation chatbot using rasa -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/Chatbot.png" alt="Movie Recommendation Chatbot" class="project-img">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Movie Recommendation Chatbot</h2>
+          <p class="project-description">
+            A conversational AI chatbot that recommends movies based on user preferences. This project uses Rasa for
+            natural language understanding and dialogue management, TMDb API for fetching movie data, and Flask to
+            create a simple, interactive web interface.</p>
+          <div class="project-tech">
+            <span class="tech-tag">NLU</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Flask</span>
+          </div>
+          <div class="project-links">
+            <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/RASA_chatbot'">
+              <i class="fab fa-github"></i> Github
+            </button>
+            <button class="project-btn"
+              onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_nlp-chatbot-rasa-activity-7260863677610811392-VCBB?utm_source=share&utm_medium=member_desktop'">
+              <i class="fas fa-globe"></i> Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amazon Sales Analysis -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/AMAZON.png" alt="Amazon Sales Analysis" class="project-img">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Amazon Sales Analysis</h2>
+          <p class="project-description">
+            Built a three-page interactive Power BI report to analyze Amazon sales data, focusing on product
+            performance, geographic distribution, and seasonal trends.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Analytics</span>
+            <span class="tech-tag">PowerBI</span>
+            <span class="tech-tag">Data Visualization</span>
+          </div>
+          <div class="project-links">
+            <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/PowerBI_project_2'">
+              <i class="fab fa-github"></i> Github
+            </button>
+            <button class="project-btn"
+              onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_powerbi-datavisualization-salesanalysis-activity-7256277877770395648-WMXx?utm_source=share&utm_medium=member_desktop'">
+              <i class="fas fa-globe"></i> Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blinkit Sales Analysis -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/BLINKIT.png" alt="Blinkit Sales Analysis" class="project-img">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">Blinkit Sales Analysis</h2>
+          <p class="project-description">
+            Designed an interactive Power BI dashboard to analyze Blinkit's sales data, focusing on outlet
+            performance, product categories, and customer preferences..
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Analytics</span>
+            <span class="tech-tag">PowerBI</span>
+            <span class="tech-tag">Data Visualization</span>
+          </div>
+          <div class="project-links">
+            <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/PowerBI_project_3'">
+              <i class="fab fa-github"></i> Github
+            </button>
+            <button class="project-btn"
+              onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_powerbi-dataanalytics-salesanalysis-activity-7257303103375323136-3omb?utm_source=share&utm_medium=member_desktop'">
+              <i class="fas fa-globe"></i> Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- IPL Analysis Project -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="assets/IPL.png" alt="IPL Analysis Project" class="project-img">
+        </div>
+        <div class="project-content">
+          <h2 class="project-title">IPL Analysis Dashboard</h2>
+          <p class="project-description">
+            Comprehensive analysis of IPL cricket data using PowerBI, featuring interactive visualizations and insights.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">PowerBI</span>
+            <span class="tech-tag">Data Visualization</span>
+            <span class="tech-tag">Analytics</span>
+          </div>
+          <div class="project-links">
+            <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/PowerBI_project'">
+              <i class="fab fa-github"></i> Github
+            </button>
+            <button class="project-btn"
+              onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_powerbi-datavisualization-ipl-activity-7233864248186052612-Mnk4'">
+              <i class="fas fa-play"></i> Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:adeeshkrishna4@gmail.com">adeeshkrishna4@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/adeeshkrishna/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Skills</a></li>
@@ -22,539 +539,9 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">
-        <img src="assets/ak logo1.png" alt="Adeesh Krishna Logo" />
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="assets/AK PP.png" alt="Adeesh Krishna profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">ADEESH KRISHNA</h1>
-        <p class="section__text__p2">Data Scientist</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('assets/AK DS-1.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/adeeshkrishna/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/adeeshkrishna'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="assets/AK PP2.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>10 Months <br />Data Science Intern</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Physics<br />M.Sc. Physics</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-                I’m Adeesh, a Data Scientist and Machine Learning Engineer with a strong focus on predictive modeling,
-                 data analysis, and AI-driven solutions. With experience in Python, SQL, OpenCV, and Power BI,
-                  I’ve developed and deployed machine learning models across a variety of industries. 
-                  My work spans from analyzing marketing campaigns to building intelligent ad systems using computer vision.
+    <p>Copyright &#169; 2024 Adeesh Krishna. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-                I am passionate about leveraging data to drive innovation and deliver impactful results, 
-                constantly learning and exploring new advancements in AI and machine learning.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming Languages / Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Pycharm</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3> V S Code</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PowerBI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git & GitHub</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Libraries / Frameworks:</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Numpy</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Pandas</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Keras</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tensorflow</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Scikit-learn</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Scikit-image</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>OpenCV</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MediaPipe</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>YOLO</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NLP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="project-grid">
-
-        <!-- SmartAd Project -->
-        <div class="project-card">
-          <div class="project-img-container">
-            <img src="assets/SMARTAD.png" alt="SmartAd Project" class="project-img">
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">SmartAd</h2>
-            <p class="project-description">
-              An intelligent advertising system using computer vision to analyze viewer engagement and demographic data in real-time.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">OpenCV</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Machine Learning</span>
-            </div>
-            <div class="project-links">
-              <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/OpenCV_project'">
-                <i class="fab fa-github"></i> Github
-              </button>
-              <button class="project-btn" onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_machinelearning-computervision-artificialintelligence-activity-7234448555048906753-Nou7'">
-                <i class="fas fa-play"></i> Demo
-              </button>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Autism Detection Project -->
-        <div class="project-card">
-          <div class="project-img-container">
-            <img src="assets/AUTISM.png" alt="Autism Detection Project" class="project-img">
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">Autism Detection from Facial Image</h2>
-            <p class="project-description">
-              Deep learning model to detect autism spectrum disorder using facial image analysis, deployed as a web application.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Deep Learning</span>
-              <span class="tech-tag">Streamlit</span>
-              <span class="tech-tag">Computer Vision</span>
-            </div>
-            <div class="project-links">
-              <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/DL_project'">
-                <i class="fab fa-github"></i> Github
-              </button>
-              <button class="project-btn" onclick="location.href='https://autism-detection-from-facial-image.streamlit.app/'">
-                <i class="fas fa-globe"></i> Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Bank Marketing Project -->
-        <div class="project-card">
-          <div class="project-img-container">
-            <img src="assets/BANK.png" alt="Bank Marketing Project" class="project-img">
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">Bank Marketing Campaign Predictor</h2>
-            <p class="project-description">
-              Machine learning model to predict the success of bank marketing campaigns, with an interactive web interface.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Machine Learning</span>
-              <span class="tech-tag">Streamlit</span>
-              <span class="tech-tag">Data Analysis</span>
-            </div>
-            <div class="project-links">
-              <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/ML_project'">
-                <i class="fab fa-github"></i> Github
-              </button>
-              <button class="project-btn" onclick="location.href='https://bank-marketing-campaign-success-prediction.streamlit.app/'">
-                <i class="fas fa-globe"></i> Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Movie recommendation chatbot using rasa -->
-        <div class="project-card">
-          <div class="project-img-container">
-            <img src="assets/Chatbot.png" alt="Movie Recommendation Chatbot" class="project-img">
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">Movie Recommendation Chatbot</h2>
-            <p class="project-description">
-              A conversational AI chatbot that recommends movies based on user preferences. This project uses Rasa for natural language understanding and dialogue management, TMDb API for fetching movie data, and Flask to create a simple, interactive web interface.</p>
-            <div class="project-tech">
-              <span class="tech-tag">NLU</span>
-              <span class="tech-tag">NLP</span>
-              <span class="tech-tag">Flask</span>
-            </div>
-            <div class="project-links">
-              <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/RASA_chatbot'">
-                <i class="fab fa-github"></i> Github
-              </button>
-              <button class="project-btn" onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_nlp-chatbot-rasa-activity-7260863677610811392-VCBB?utm_source=share&utm_medium=member_desktop'">
-                <i class="fas fa-globe"></i> Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Amazon Sales Analysis -->
-        <div class="project-card">
-          <div class="project-img-container">
-            <img src="assets/AMAZON.png" alt="Amazon Sales Analysis" class="project-img">
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">Amazon Sales Analysis</h2>
-            <p class="project-description">
-              Built a three-page interactive Power BI report to analyze Amazon sales data, focusing on product
-              performance, geographic distribution, and seasonal trends.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Analytics</span>
-              <span class="tech-tag">PowerBI</span>
-              <span class="tech-tag">Data Visualization</span>
-            </div>
-            <div class="project-links">
-              <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/PowerBI_project_2'">
-                <i class="fab fa-github"></i> Github
-              </button>
-              <button class="project-btn" onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_powerbi-datavisualization-salesanalysis-activity-7256277877770395648-WMXx?utm_source=share&utm_medium=member_desktop'">
-                <i class="fas fa-globe"></i> Demo
-              </button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Blinkit Sales Analysis -->
-        <div class="project-card">
-          <div class="project-img-container">
-            <img src="assets/BLINKIT.png" alt="Blinkit Sales Analysis" class="project-img">
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">Blinkit Sales Analysis</h2>
-            <p class="project-description">
-              Designed an interactive Power BI dashboard to analyze Blinkit's sales data, focusing on outlet
-              performance, product categories, and customer preferences..
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Analytics</span>
-              <span class="tech-tag">PowerBI</span>
-              <span class="tech-tag">Data Visualization</span>
-            </div>
-            <div class="project-links">
-              <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/PowerBI_project_3'">
-                <i class="fab fa-github"></i> Github
-              </button>
-              <button class="project-btn" onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_powerbi-dataanalytics-salesanalysis-activity-7257303103375323136-3omb?utm_source=share&utm_medium=member_desktop'">
-                <i class="fas fa-globe"></i> Demo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- IPL Analysis Project -->
-        <div class="project-card">
-          <div class="project-img-container">
-            <img src="assets/IPL.png" alt="IPL Analysis Project" class="project-img">
-          </div>
-          <div class="project-content">
-            <h2 class="project-title">IPL Analysis Dashboard</h2>
-            <p class="project-description">
-              Comprehensive analysis of IPL cricket data using PowerBI, featuring interactive visualizations and insights.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">PowerBI</span>
-              <span class="tech-tag">Data Visualization</span>
-              <span class="tech-tag">Analytics</span>
-            </div>
-            <div class="project-links">
-              <button class="project-btn" onclick="location.href='https://github.com/adeeshkrishna/PowerBI_project'">
-                <i class="fab fa-github"></i> Github
-              </button>
-              <button class="project-btn" onclick="location.href='https://www.linkedin.com/posts/adeeshkrishna_powerbi-datavisualization-ipl-activity-7233864248186052612-Mnk4'">
-                <i class="fas fa-play"></i> Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:adeeshkrishna4@gmail.com">adeeshkrishna4@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/adeeshkrishna/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Adeesh Krishna. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>
