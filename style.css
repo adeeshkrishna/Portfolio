@@ -30,7 +30,7 @@ a,
 
 .logo img {
   height: 250px;
-  width: auto; 
+  width: auto;
 }
 
 
@@ -324,8 +324,13 @@ section {
 
 /* SKILL SECTION */
 
-#experience {
+#work_experience {
   position: relative;
+}
+
+#work_experience .title {
+  margin-bottom: 1.5rem;
+  /* Add spacing below the title */
 }
 
 .experience-sub-title {
@@ -360,6 +365,38 @@ article .icon {
   cursor: default;
 }
 
+/* WORK EXPERIENCE SECTION */
+#experience {
+  position: relative;
+}
+
+.work-experience-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Adjust spacing between cards */
+  align-items: flex-start;
+  /* Align cards at the top */
+}
+
+.work-card {
+  flex: 1;
+  min-width: 400px;
+  max-width: 600px;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* PROJECTS SECTION */
 
 /* PROJECT SECTION STYLING */
@@ -392,7 +429,8 @@ article .icon {
 .project-img-container {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
 }
 
 .project-img {
@@ -511,4 +549,3 @@ footer {
 footer p {
   text-align: center;
 }
-
