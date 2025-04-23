@@ -33,7 +33,6 @@ a,
   width: auto;
 }
 
-
 /* DESKTOP NAV */
 
 nav,
@@ -232,9 +231,8 @@ section {
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.0rem;
 }
 
 .btn-color-1,
@@ -328,6 +326,48 @@ section {
   position: relative;
 }
 
+#work_experience .section-container {
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+}
+
+#work_experience .section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+#work_experience .work-pic {
+  border-radius: 2rem;
+}
+
+#work_experience .work-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#work_experience .about-containers {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#work_experience .details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+#work_experience .text-container {
+  text-align: justify;
+}
+
 #work_experience .title {
   margin-bottom: 1.5rem;
   /* Add spacing below the title */
@@ -388,7 +428,8 @@ article .icon {
   background: white;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: left; /* Align text to the left */
+  text-align: left;
+  /* Align text to the left */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
