@@ -1,41 +1,35 @@
-# 👋 Hi, I'm Adeesh!
+# Adeesh Krishna — AI/ML Engineer & Generative AI Developer
 
-A passionate Data Scientist and Machine Learning Enthusiast with hands-on experience in transforming data into actionable insights, building predictive models, and developing intelligent solutions for business challenges. Currently a Data Science Intern at Luminar Technohub, I'm constantly learning and experimenting with new tools and technologies to deepen my expertise.
+I build practical AI-powered applications and Python backend services, focusing on Generative AI, RAG systems, Azure OpenAI integrations and workflow automation.
 
-# 🚀 Technical Skills
+- **Portfolio:** https://adeeshkrishna.github.io/Portfolio/
+- **GitHub:** https://github.com/adeeshkrishna
+- **LinkedIn:** https://www.linkedin.com/in/adeeshkrishna/
+- **Email:** adeeshkrishna4@gmail.com
 
-- Programming Languages: Python, SQL
-- Machine Learning & Data Science Libraries: Pandas, NumPy, Scikit-Learn, TensorFlow, OpenCV, Mediapipe
-- Data Visualization: Power BI, Matplotlib, Seaborn
-- Other Tools: Streamlit, MySQL
+## Focus areas
+- Generative AI, LLM application development and prompt engineering
+- Retrieval-augmented generation (RAG), embeddings and semantic search
+- Python, FastAPI and REST API development
+- Azure OpenAI and Azure AI services
+- Document processing and AI-powered workflow automation
+- Machine learning, NLP and computer vision
 
-# 🔍 Areas of Expertise
+## Selected projects
+| Project | Description | Technologies |
+|---|---|---|
+| [IntelliPDF](https://github.com/adeeshkrishna/intelli_pdf) | PDF question-answering with RAG | Python, LangChain, ChromaDB, OpenAI |
+| [SmartAd](https://github.com/adeeshkrishna/OpenCV_project) | Computer-vision-based intelligent advertising concept | Python, OpenCV |
+| [Movie Recommendation Chatbot](https://github.com/adeeshkrishna/RASA_chatbot) | Conversational movie recommendations | Rasa, NLP, Flask |
+| [Bank Marketing Predictor](https://github.com/adeeshkrishna/ML_project) | Machine learning campaign prediction | Python, Scikit-learn |
+| [Deep Learning Project](https://github.com/adeeshkrishna/DL_project) | CNN-based image classification | Python, TensorFlow |
+| [IPL Analytics](https://github.com/adeeshkrishna/PowerBI_project) | Interactive cricket analytics dashboard | Power BI |
 
-- Data Preprocessing & Exploratory Data Analysis
-- Machine Learning Model Development & Optimization
-- Natural Language Processing (NLP)
-- Computer Vision Applications with OpenCV & Mediapipe
-- Business Intelligence Reporting and Data Visualization
+## Technical toolkit
+**Generative AI:** Azure OpenAI, OpenAI API, LLMs, RAG, prompt engineering, embeddings  
+**Backend:** Python, FastAPI, REST APIs, WebSockets  
+**Retrieval & data:** ChromaDB, semantic search, PostgreSQL, Pandas, NumPy  
+**Cloud & tools:** Azure AI Search, Azure Blob Storage, Azure Web Apps, Git, GitHub, Docker  
+**ML & analytics:** Scikit-learn, TensorFlow, NLP, OpenCV, Power BI
 
-# 📂 Notable Projects
-
-- Bank Marketing Campaign Prediction: Developed a model to predict marketing campaign success using Random Forest, achieving 92% accuracy.
-- Autism Spectrum Disorder Detection: Built a CNN model to classify ASD from facial images, achieving 82% accuracy.
-- SmartAd Intelligent Advertisement Board: Created a real-time ad targeting system using facial analysis for personalized ad display.
-- IPL Data Analysis: Designed a Power BI dashboard for IPL data (2008-2024), visualizing key performance metrics and trends.
-- Amazon Sales Analysis: Performed data analysis on Amazon sales data, identifying sales trends and customer purchasing patterns.
-- Blinkit Sales Analysis: Analyzed Blinkit's sales data to uncover business insights, contributing to data-driven decision-making for sales strategies.
-
-# 🌱 What I'm Currently Working On
-
-- Enhancing my skills in NLP and Computer Vision by working on projects with real-world impact.
-- Learning advanced techniques in Deep Learning and AI to broaden my machine learning expertise.
-
-# 📫 Let's Connect!
-
-- LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/adeeshkrishna/)
-- Portfolio: https://adeeshkrishna.github.io/Portfolio/
-- Email: adeeshkrishna4@gmail.com
-
-Feel free to reach out for collaboration, project discussions, or just to say hi! I'm always excited to connect with fellow data enthusiasts and exchange ideas.
-
+I have 1–2 years of professional experience and an M.Sc. degree. If you have an AI application, RAG workflow, Python API or automation project in mind, feel free to reach out.
